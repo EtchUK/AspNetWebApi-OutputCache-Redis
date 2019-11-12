@@ -9,3 +9,9 @@ before_build:
 build:
   project: WebAPI.OutputCache.Redis.sln       
   verbosity: minimal
+
+deploy:
+  - provider: Environment
+    name: Etch-MyGet
+    on:
+      branch: master

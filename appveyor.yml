@@ -11,10 +11,10 @@ build:
   verbosity: minimal
 
 after_build:
-  - cmd: nuget pack %APPVEYOR_BUILD_FOLDER%\**\*.nuspec -version %APPVEYOR_BUILD_VERSION%
+  - cmd: nuget pack %APPVEYOR_BUILD_FOLDER%\WebAPI.OutputCache.Redis\WebAPI.OutputCache.Redis.nuspec -version %APPVEYOR_BUILD_VERSION%
 
 artifacts:
-  - path: '**\*.nupkg'
+  - path: WebAPI.OutputCache.Redis\WebAPI.OutputCache.Redis.nupkg
     name: WebAPI.OutputCache.Redis
 
 test: off

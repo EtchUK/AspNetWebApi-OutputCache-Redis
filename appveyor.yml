@@ -10,6 +10,13 @@ build:
   project: WebAPI.OutputCache.Redis.sln       
   verbosity: minimal
 
+after_build:
+  - cmd: nuget pack %APPVEYOR_BUILD_FOLDER%\**\*.nuspec -version %APPVEYOR_BUILD_VERSION%
+
+artifacts:
+  - path: '**\*.nupkg'
+    name: WebAPI.OutputCache.Redis
+
 test: off
 
 deploy:

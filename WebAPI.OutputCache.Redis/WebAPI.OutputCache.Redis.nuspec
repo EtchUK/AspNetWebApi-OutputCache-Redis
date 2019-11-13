@@ -20,6 +20,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\WebAPI.OutputCache.Redis.dll" target="lib\net451\WebAPI.OutputCache.Redis.dll" />
+    <file src="bin\Release\WebAPI.OutputCache.Redis.dll" target="lib\net462\WebAPI.OutputCache.Redis.dll" />
   </files>
 </package>

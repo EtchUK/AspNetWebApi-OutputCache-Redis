@@ -15,7 +15,7 @@
     </summary>
     <tags>redis aspnet webapi webapi2 cache output outputcache</tags>
     <dependencies>
-      <dependency id="StackExchange.Redis" version="2.0.601"  />
+      <dependency id="StackExchange.Redis" version="[2.0.519,3)"  />
       <dependency id="Strathweb.CacheOutput.WebApi2" version="0.11.0" />
     </dependencies>
   </metadata>
